@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+html,
+h1,
+p{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+div {
+    overflow: auto;
+}
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.main-div {
+    margin: 50px 0;
+    text-align: center;
+    line-height: 4;
+    color: wheat;
+}
+.main-div .fa-brands {
+   margin-inline: 20px;
+   cursor: pointer;
+   font-size: 35px;
+    
+}
+.fa-brands:hover {
+    color: blue;
+    transition: 0.5s;
+}
+ .animate {
+     animation: serhat 2s infinite;
+ }
+ @keyframes serhat {
+     0%{
+         color: red;
+     }
+     50% {
+        color: blueviolet;
+     }
+     100% {
+        color: wheat;
+     }
+ }
+
+ 
+ .mycontainer {
+     background-color: white;
+     width: 80%;
+     margin: auto;
+     padding: 0 80px;
+     padding-bottom: 100px;
+ }
+ .content  {
+     width: 100%;
+     margin-top: 60px;
+ }
+ h2 {
+     margin-bottom: 20px;
+ }
+
+ .column-25, .column-50, .column-75
+{
+    float: left;
+    padding: 20px;
+}
+.column-25 {
+    width: 25%;
+}
+.column-50 {
+    width: 50%;
+}
+.column-75 {
+    width: 75%;
+}
+.column-100 {
+    width: 100%;
+}
+
+
+.input,  select{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+button {
+border: none;
+background-color: blueviolet;
+color: white;
+padding: 10px 20px;
+font-weight: bold;
+border-radius: 5px;
+}
+.column-25 button {
+    margin-top: 23px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    transition: 2s;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+}
+input[type=submit] {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:blueviolet;
+    border-radius: 10px;
+    border: 3px dotted black;
+}
+
+
+
+::-webkit-scrollbar-track {
+    background-color: rgb(178, 178, 178);
+    border: 2px solid wheat;
+    border-radius: 10px
+}
+
+
+/* responsive */
+@media screen and (max-width:1100px) {
+
+    .mycontainer {
+        width: 90%;
+    }
+    
+    .column-25, .column-75 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .mycontainer {
+        width: 100%;
+        text-align: center;
+    }
+    .column-75 {
+        margin-left: 60px;
+    }
+    .column-25, .column-50, .column-75 .column-100 {
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px) {
+    .mycontainer {
+        padding: 0 10px;
+    }
+    
+
+}
